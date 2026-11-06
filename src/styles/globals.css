@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+@import '../tokens/themes.css';
+
+body {
+	background: var(--color-bg);
+	color: var(--color-fg);
+	font-family: var(--font-sans);
+}
+
+:focus-visible {
+	outline: var(--focus-ring);
+	outline-offset: 2px;
+}
